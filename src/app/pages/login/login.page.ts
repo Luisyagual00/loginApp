@@ -1,9 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { IonicModule } from '@ionic/angular';
+import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
+  standalone: true,
+  imports: [CommonModule, IonicModule, ReactiveFormsModule],
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss'],
 })
